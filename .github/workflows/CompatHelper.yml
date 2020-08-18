@@ -11,3 +11,6 @@ jobs:
     steps:
       - name: CompatHelper
         uses: JuliaRegistries/CompatHelper.jl@smann/compathelper-action
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          COMPATHELPER_PRIV: ${{ secrets.COMPATHELPER_PRIV }}
